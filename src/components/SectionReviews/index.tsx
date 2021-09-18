@@ -5,7 +5,6 @@ import Container from 'components/Container'
 import Heading from 'components/Heading'
 import ReviewCard from 'components/ReviewCard'
 
-import reviews from './content'
 import * as S from './styles'
 
 const settings = {
@@ -35,7 +34,7 @@ const SectionReviews = () => (
     <Heading reverseColor>Junte-se a mais de 200 mil alunos</Heading>
 
     <S.Content>
-      <Slider {...settings}>
+      {/* <Slider {...settings}>
         {reviews.map(({ name, image, description }, index) => (
           <ReviewCard
             key={index}
@@ -45,7 +44,7 @@ const SectionReviews = () => (
             id={index}
           />
         ))}
-      </Slider>
+      </Slider> */}
     </S.Content>
   </Container>
 )
